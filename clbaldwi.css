@@ -173,11 +173,28 @@ h1{
 background: url('http://www.uvm.edu/~clbaldwi/cs142/assignment2.1/images/paintbrush.gif') no-repeat center left;
 color: white;
 text-indent: 30px;
-background-size: 600px 60px;
-margin-bottom:10px;
+background-size: 600px 100px;
+margin-bottom:20px;
 list-style:none;
 }
 .summary a {
 color: white;
 
 }
+
+
+
+
+/*Sick Page rules*/
+
+
+
+.radio {
+background-color: yellow;
+}
+
+#callInSick {
+background: url('http://www.uvm.edu/~clbaldwi/cs142/assignment2.1/images/sickcloud.png') no-repeat;
+background-size:  350px 250px
+}
+

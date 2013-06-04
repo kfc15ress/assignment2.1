@@ -36,7 +36,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </script>
 </head>
 
-<body id="assignments">
+<body id="sick">
 <div id="wrapper"> <!-- Main wrapper for CSS --> 
 <div id="candyWrapper"> <!-- all the header info wrapper for CSS --> 
 <header> <!-- ************ header ************ -->
@@ -63,10 +63,10 @@ Rank: 12 of 8
 
 <nav id="mainMenu"> <!-- %^%^%^%^%^%^%^%^%^%^%^%^ Navigation %^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^%^% -->
 <ol>
-<li class="menuLink activeLink"><a href="assignments.php">Assignments</a></li>
+<li class="menuLink"><a href="assignments.php">Assignments</a></li>
 <li class="menuLink"><a href="calendar.php?abWeek=10">Calendar</a></li>
 <li class="menuLink"><a href="lectures.php">Lectures</a></li>
-<li class="menuLink"><a href="sick.php">Sick</a></li>
+<li class="menuLink activeLink"><a href="sick.php">Sick</a></li>
 <li class="menuLink"><a href="syllabus.php">Syllabus</a></li>
 <li class="menuLink"><a href="submitAssignment.php">Submit Assignment</a></li>
 </ol>
@@ -85,11 +85,11 @@ Rank: 12 of 8
 </nav>
 <!-- ######################## adminMenu ######################## -->
 </div> <!-- ends candyWrapper -->
-<section id="mainContent"> 
-<!-- ######################## main Content ######################## -->
-<h2>Assignments</h2>
-<ol class="AssignmentsLink">
-<li class="title summary">2013-05-28 - <a class="url" href="displayAssign.php?pid=148447">Styling a Resume</a></li><li class="title summary">2013-06-10 - <a class="url" href="displayAssign.php?pid=148449">Redsign the Course Web Site</a></li><li class="title summary">2013-06-14 - Before and After</a></li><li class="title summary">2013-06-19 - Attendance</a></li><li class="title summary">2013-06-21 - Web Usability Testing</a></li><li class="title summary">2013-06-28 - Final Project Due: 07:30 - 10:15 AM</a></li></ol></section> <!-- ########### main Content ########### -->
+<section id="mainContent"> <!-- ######################## main Content ######################## -->
+<script type="text/javascript"><!-- 
+function setCallIn(reason){   switch(reason)   {   case 19:     document.getElementById("butSubmit").value="Call in Sick";     break;   case 16:     document.getElementById("butSubmit").value="Take a Personal Day";     break;   case 13:     document.getElementById("butSubmit").value="I have a Game Today";     break;   case 11:     document.getElementById("butSubmit").value="I have finsihed lab";     break;   } } 
+//--> 
+</script> <form method='post' name='callInSick' id='callInSick' action=''><fieldset class="form"><fieldset class="given"><p>Student: Crystal L. Baldwin</p>	<input type="hidden" id="student" name="student" value="clbaldwi"/><p>Date: June 4, 2013</p>	<input type="hidden" id="dateSick" name="dateSick" value="June 4, 2013"/><p>CRN: 60649 - CS 142 Advanced Web Design: CSS and Usability</p>	<input type="hidden" id="crn" name="crn" value="60649"/></fieldset><fieldset class="radio">   <legend>Reason</legend>   <label><input type="radio" id="optSick" name="optReason" value="S" onclick="javscript:setCallIn(19);"                 tabindex="231" checked="checked" />Sick</label>   <label><input type="radio" id="optPersonal" name="optReason" value="P" onclick="javscript:setCallIn(16);"        tabindex="233" />Personal Day</label>   <label><input type="radio" id="optPersonal" name="optReason" value="G" onclick="javscript:setCallIn(13);"        tabindex="233" />Game Day</label></fieldset>	<fieldset><label for="txtComments" class="required">Comments (not required) </label><textarea id="txtComments" name="txtComments" tabindex="271" cols="40" rows="5" onfocus="this.select()"></textarea></fieldset><fieldset><label for="butSubmit">An email will be sent to you for your records. </label><input type="submit" id="butSubmit" name="butSubmit" value="Call in Sick"            tabindex="991" class="button"/></fieldset></fieldset></form></section> <!-- ########### main Content ########### -->
 <footer>
 <p>Web designed by: <span id="author"></span>
 </p>
