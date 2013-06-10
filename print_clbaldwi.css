@@ -32,7 +32,7 @@ display: inline;
 /*for the h1 to appear at the top*/
 h1 
 {
-position: top; text-align: center; font: 14pt "Times New Roman", "TimesNR", "Times", "serif"; color: black; padding: .5em;
+position: absolute; text-align: center; font: 14pt "Times New Roman", "TimesNR", "Times", "serif"; color: black; padding: .5em;
 page-break-after: avoid;
 }
 
@@ -47,28 +47,7 @@ p
 page-break-after: avoid;
 }
 
-/*main CSS wrapper
-wrapper
 
-/*main CSS header
-candyWrapper
-
-/*other h1s
-classtitle
-
-/*the nav section id
-toolmenu
-
-/*student info section
-studentInfo
-
-/*main content
-
-mainContent
-h1 {page-break-after: always;}
-h2 {page-break-before: avoid;}
-
-page-break-inside: avoid;
 
 
 
